@@ -1,9 +1,15 @@
 import Styles from "./Layout.module.css";
+import Navbar from "../Navbar/Navbar";
+import Footer from "../Footer/Footer";
+import { Outlet } from "react-router-dom";
 
-export function Layout() {
+function Layout() {
   return (
     <>
-      <h1>Template Name</h1>
+      <Navbar />
+      <Outlet > </Outlet>
+      <Footer />
     </>
   );
 }
+export default Layout;

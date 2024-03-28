@@ -1,6 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300&display=swap');
-
 :root {
     --main-color: #0aad0a;
     --light-color: #f0f3f2;
@@ -15,7 +14,9 @@ body {
 
 .rating-color {
     color: var(--rating-color);
-} .cursor-pointer {
+}
+
+.cursor-pointer {
     cursor: pointer;
 }
 
@@ -35,44 +36,25 @@ a:hover {
     transform: translateY(100%);
     opacity: 0;
 }
+
 .product:hover .btn {
-  opacity: 1;
-  transform: translateY(0%);
+    opacity: 1;
+    transform: translateY(0%);
 
 }
 
 .font-sm {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 .text-main {
-  color: var(--main-color);
+    color: var(--main-color);
 }
 
 .bg-main {
-  background-color: var(--main-color) !important;
+    background-color: var(--main-color) !important;
 }
 
 .bg-main-light {
-  background-color: var(--light-color) !important;
-}
-.product:hover .btn {
-  opacity: 1;
-  transform: translateY(0%);
-
-}
-
-.font-sm {
-  font-size: 14px;
-}
-.text-main {
-  color: var(--main-color);
-}
-
-.bg-main {
-  background-color: var(--main-color) !important;
-}
-
-.bg-main-light {
-  background-color: var(--light-color) !important;
+    background-color: var(--light-color) !important;
 }

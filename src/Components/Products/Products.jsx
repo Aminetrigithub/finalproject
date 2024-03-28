@@ -1,9 +1,10 @@
 import Styles from "./Products.module.css";
 
-export function Products() {
+ function Products() {
   return (
     <>
       <h1>Template Name</h1>
     </>
   );
 }
+export default Products

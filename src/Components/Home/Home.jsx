@@ -1,9 +1,10 @@
 import Styles from "./Home.module.css";
 
-export function Home() {
+function Home() {
   return (
     <>
       <h1>Template Name</h1>
     </>
   );
 }
+export default Home

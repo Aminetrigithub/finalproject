@@ -1,9 +1,10 @@
 import Styles from "./Categories.module.css";
 
-export function Categories() {
+ function Categories() {
   return (
     <>
       <h1>Template Name</h1>
     </>
   );
 }
+export default Categories
