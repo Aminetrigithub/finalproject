@@ -11,7 +11,6 @@ import Login from "./Components/Login/Login";
 import NotFound from "./Components/NotFound/NotFound";
 import Register from "./Components/Register/Register";
 
-
 let routers = createBrowserRouter([
   {
     path: "/",
@@ -29,12 +28,7 @@ let routers = createBrowserRouter([
 ]);
 
 function App() {
-  return (
-
-<RouterProvider router = {routers}> </RouterProvider>
-
-
-);
+  return <RouterProvider router={routers}> </RouterProvider>;
 }
 
 export default App;

@@ -13,8 +13,9 @@ function Register() {
       password: "",
       rePassword: "",
     },
-    onSubmit: () => {     console.log("hello");
-  }
+    onSubmit: () => {
+      console.log("hello");
+    },
   });
 
   return (
@@ -24,7 +25,7 @@ function Register() {
         <form onSubmit={formik.handleSubmit}>
           <label htmlFor="name"> Name:</label>
           <input
-            className="form-control"
+            className="form-control mb-2"
             onBlur={formik.handleBlur}
             onChange={formik.handleChange}
             value={formik.values.name}
@@ -32,6 +33,51 @@ function Register() {
             name="name"
             id="name"
           />
+
+          <label htmlFor="email"> Email:</label>
+          <input
+            className="form-control mb-2"
+            onBlur={formik.handleBlur}
+            onChange={formik.handleChange}
+            value={formik.values.email}
+            type="email"
+            name="email"
+            id="email"
+          />
+
+          <label htmlFor="phone"> Phone:</label>
+          <input
+            className="form-control mb-2"
+            onBlur={formik.handleBlur}
+            onChange={formik.handleChange}
+            value={formik.values.phone}
+            type="tel"
+            name="phone"
+            id="phone"
+          />
+
+          <label htmlFor="password"> Password:</label>
+          <input
+            className="form-control mb-2"
+            onBlur={formik.handleBlur}
+            onChange={formik.handleChange}
+            value={formik.values.password}
+            type="password"
+            name="password"
+            id="password"
+          />
+
+          <label htmlFor="rePassword"> Password:</label>
+          <input
+            className="form-control mb-2"
+            onBlur={formik.handleBlur}
+            onChange={formik.handleChange}
+            value={formik.values.rePassword}
+            type="password"
+            name="rePassword"
+            id="rePassword"
+          />
+
           <button className="bg-main  btn text-white mt-2" type="submit">
             Register
           </button>
@@ -40,4 +86,4 @@ function Register() {
     </>
   );
 }
-export default Register;
+export default Register
